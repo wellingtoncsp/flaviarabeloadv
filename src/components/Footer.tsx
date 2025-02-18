@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export function Footer() {
   return (
     <footer className="bg-gray-900 text-gray-300">
@@ -26,10 +28,12 @@ export function Footer() {
             <div className="flex space-x-4">
               <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" 
                 className="text-gray-400 hover:text-white transition-colors">
-                <img 
-                  src="https://cdn-icons-png.flaticon.com/512/174/174857.png" 
-                  alt="LinkedIn" 
-                  className="w-6 h-6 opacity-75 hover:opacity-100"
+                <Image 
+                  src="/images/linkedin.png"
+                  alt="LinkedIn"
+                  width={24}
+                  height={24}
+                  className="opacity-75 hover:opacity-100"
                 />
               </a>
               {/* <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"
@@ -70,26 +74,32 @@ export function Footer() {
             <h3 className="text-white font-semibold mb-4">Contato</h3>
             <ul className="space-y-2">
               <li className="flex items-center gap-2">
-                <img 
-                  src="https://cdn-icons-png.flaticon.com/512/724/724664.png" 
-                  alt="Telefone" 
-                  className="w-4 h-4 opacity-75"
+                <Image 
+                  src="/images/phone.png"
+                  alt="Telefone"
+                  width={16}
+                  height={16}
+                  className="opacity-75"
                 />
                 <span>(11) 99999-9999</span>
               </li>
               <li className="flex items-center gap-2">
-                <img 
-                  src="https://cdn-icons-png.flaticon.com/512/552/552486.png" 
-                  alt="Email" 
-                  className="w-4 h-4 opacity-75"
+                <Image 
+                  src="/images/email.png"
+                  alt="Email"
+                  width={16}
+                  height={16}
+                  className="opacity-75"
                 />
                 <span>contato@flaviarabelo.adv.br</span>
               </li>
               <li className="flex items-center gap-2">
-                <img 
-                  src="https://cdn-icons-png.flaticon.com/512/1180/1180755.png" 
-                  alt="Localização" 
-                  className="w-4 h-4 opacity-75"
+                <Image 
+                  src="/images/location.png"
+                  alt="Localização"
+                  width={16}
+                  height={16}
+                  className="opacity-75"
                 />
                 <span>Av. Paulista, 1000 - São Paulo, SP</span>
               </li>

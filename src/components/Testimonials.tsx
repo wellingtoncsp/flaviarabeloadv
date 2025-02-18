@@ -35,7 +35,6 @@ export function Testimonials() {
     </section>
   );
 }
-
 const testimonials = [
   {
     name: "Maria Silva",
