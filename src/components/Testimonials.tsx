@@ -27,7 +27,7 @@ export function Testimonials() {
                   <p className="text-sm text-gray-600">{testimonial.type}</p>
                 </div>
               </div>
-              <p className="text-gray-600 italic">"{testimonial.text}"</p>
+              <p className="text-gray-600 italic">&ldquo;{testimonial.text}&rdquo;</p>
             </div>
           ))}
         </div>
